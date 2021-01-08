@@ -1,0 +1,74 @@
+#服务配置
+server:
+  port: 10600
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: fastdfs
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.10.10:8848
+        ext-config:
+          - data-id: nvxapp_mysql.yaml
+          - data-id: application_discovery.yaml
+          - data-id: application-sentinel.yaml
+          - data-id: application_redis.yaml
+          - data-id: ms_control_kafka.yaml
+
+mybatis:
+  #  configuration:
+  #打印sql 语句
+  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: mapper/*.xml
+
+fdfs:
+  # 连接Tracker服务器超时时间
+  connect-timeout: 10000
+  # storage服务器响应的超时时间
+  so-timeout: 3000
+  #  trakcer服务器的数量
+  tracker-list:
+    - 192.168.10.10:22122
+  pool:
+    jmx-enabled: false
+
+
+
+com:
+  komlin:
+    fdfs: http://192.168.10.10/
+    fileType:
+      image:
+        - jpg
+        - png
+        - jpeg
+        - gif
+      video:
+        - mp4
+        - avi
+        - rm
+        - rmvb
+        - mtv
+        - dat
+        - wmv
+        - flv
+        - webp
+        - mov
+      others:
+        - pdf
+        - wav
+        - mp3
+        - pcm
+        - doc
+        - docx
+        - xlsx
+        - rar
+        - zip
+

@@ -1,0 +1,22 @@
+POST http://192.168.50.222:10600/util/uploadFile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="fileName"; filename="file.png"
+
+< /Users/Albert/Desktop/bf465694ef6990a2b4c0cfa0f5b5f26c.xlsx
+--WebAppBoundary--
+
+###
+
+
+POST http://192.168.50.222:10600/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="file.png"
+
+< /Users/Albert/Desktop/bf465694ef6990a2b4c0cfa0f5b5f26c.xlsx
+--WebAppBoundary--
+
+###

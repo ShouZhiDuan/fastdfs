@@ -1,0 +1,41 @@
+POST http://192.168.10.10:10010/file/util/uploadFile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTI1ODAwNTQsInVzZXJfbmFtZSI6IjIiLCJqdGkiOiJhYjNlYjY1ZS0zYjk5LTQ4OGEtYTgxZi1iNDIxZjQxNDZjNTIiLCJjbGllbnRfaWQiOiJjbGllbnRfaWQiLCJzY29wZSI6WyJhbGwiXX0.ihvEdCxR_e6KVUX9OAw1gNXgS-_bnMxEZZiSAoLfeT379GzGCZDS5mvVuuft4L05CUZ7aPKFTkg-Jhj1p_e9gOs1b6gztPrl7pfD8JwUH5NwvCyeSpeJSUoFVYn4jrWdrnu3BfB1BG6tPR9gQiKxQDs4Y3xYPTDz59r8n_v0bVRuSkSk_c-4IfNcxG30_9jUknBQwo_-tql0S7HFanqX1bFnVvfwrDn_Sdn_K85ptJtnjn3yyvHdQeBjqgZCzcs4kdGhp91gVEqqYZUDOrR0wNodn4BSXWt1WTPQPMbPjijV5lE6o3ZATA0f5BhyUj-JyC7flWrZW7TFIA2-RFv6eQ
+
+--WebAppBoundary
+Content-Disposition: form-data; name="fileName"; filename="timg3.jpg"
+
+< /Users/Albert/Nvxclouds/监管系统开发计划.png
+--WebAppBoundary--
+
+###
+
+
+POST http://39.170.9.159:10010/file/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZSI6WyJzZXJ2aWNlcyJdLCJleHAiOjE1OTEzNjkyNTEsImp0aSI6ImZmZWVlYzRkLTI0YTAtNDcwNS1iZTFlLTM5ZWM1ZTk0NjczYyIsImNsaWVudF9pZCI6IjlhOGMwMmZmLTg4MmUtNDdhNS1hMzk1LTEwZGIyYjg4NzU5YyJ9.L7v3Nwhs12WH83GsuQadEpUqdZQxH-FlZ2j34oCKE4rCH--QNCJKKKr6QhqUWMSXi8dHYq5dxzL-pQWvQyL5TMpqUQ81OAAUxqGL2K2JhbRv77_1H6Nc-p8zeLw7igpT7fIQJ3hjt0CX8iG6_og08CnVtC_2LyoviWhyFlARFSEizOoKxt6NwaPKLjN2U3NOw1qgW2E5141m57UkfH2Z2ZsHQzk2PqsTWttH-xOlavv3RhfPgsp7uINVXkeJFAtQstNAwbrGyUXh5V7ZRfVsxm0jXRCPf-7HkuFSPt2Clq_OPyHrikQLCVu15xdKwNKj2rQ_bRB0e9hyGfvafBy4aw
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="timg3.jpg"
+
+< /Users/Albert/Nvxclouds/监管系统开发计划.png
+--WebAppBoundary--
+
+###
+
+GET http://192.168.10.10:10060/file/1
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTA3ODcwNzIsInVzZXJfbmFtZSI6IjIiLCJqdGkiOiIwMTQ4NDk4MS0wOGY3LTQ1MTQtOTRjZS01MmFmNWNhZGMwNDAiLCJjbGllbnRfaWQiOiJjbGllbnRfaWQiLCJzY29wZSI6WyJhbGwiXX0.V6gvphaGabsMeNSTmGWzzLWRUtfS-0K3sMrntydqQir6ZgN2aUj_c6UQ1W1RSm8fQy9OO3_5u9hn2e_Wi8yCDS3OuMSmHWjIxFCbvBGrz9J4ntdAe1ds6N9mW-vMI7HrdzJmgTlF7zR5G-hsyznwrXSFIXS_jJB-ehrYQF77L55mLA6lLWtEvyFjKAfzHzq48vaLG5Jlc88jOjG4l3y-D7i_uPrbegJdPzS_USKrw6sQxWyFgnr9pxxlb6HNBVwKnjJ2ClnkMt3c9QhQ_lgAEbgrAaDC4L2LiKmu39Y1WME-dYS8avBL4Y39MTCoYox5WrvTyTXecKgQyAGUoDhW3Q
+
+
+
+###
+
+
+POST http://192.168.10.100:8080/uploads
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="image_name"; filename="timg3.jpg"
+
+< /Users/Albert/Nvxclouds/监管系统开发计划.png
+--WebAppBoundary--

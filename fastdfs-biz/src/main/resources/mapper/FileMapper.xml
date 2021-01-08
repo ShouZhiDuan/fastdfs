@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nvxclouds.fastdfs.biz.mapper.FileMapper">
+
+    <select id="selectFileIDByMD5" resultType="java.lang.Long">
+        SELECT f.id FROM file f WHERE f.md5 = #{fileMD5}
+    </select>
+</mapper>
